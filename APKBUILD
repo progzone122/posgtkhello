@@ -5,7 +5,7 @@ pkgdesc="Simple GTK2 C++ application template with a fully configured build syst
 author="DiabloSat"
 url="https://github.com/progzone122/posgtkhello"
 license="MIT"
-arch="armhf"
+arch="armv7"
 depends=""
 makedepends="gcc cmake make build-base gtk+2.0-dev pango-dev cairo-dev gdk-pixbuf-dev glib-dev harfbuzz-dev freetype-dev fontconfig-dev"
 
