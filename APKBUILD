@@ -16,7 +16,7 @@ build() {
     cd "$builddir"
     mkdir -p build
     cd build
-    cmake .. -DCMAKE_BUILD_TYPE=Release -DCMAKE_INSTALL_PREFIX=/usr
+    cmake .. -G "Unix Makefiles" -DCMAKE_BUILD_TYPE=Release -DCMAKE_INSTALL_PREFIX=/usr
     make
 }
 
@@ -26,5 +26,5 @@ package() {
 }
 
 sha512sums="
-ba5beef6b6604868259a3616bf761c798104a162b3a4a941ddd5b17ca22df2e69e01819ed12fb4646dcbde594dcaf723b2c3ce5544bbf0f301b1f30bc267631f mypkg-1.0.tar.gz
+ba5beef6b6604868259a3616bf761c798104a162b3a4a941ddd5b17ca22df2e69e01819ed12fb4646dcbde594dcaf723b2c3ce5544bbf0f301b1f30bc267631f  mypkg-1.0.tar.gz
 "
